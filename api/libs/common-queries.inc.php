@@ -19,7 +19,7 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-define("DASHNINJA_BEV","2.0");
+define("AITNINJA_BEV","2.0");
 
 // Function to retrieve the masternode list
 function dmn_masternodes_get($mysqli, $testnet = 0, $protocol = 0, $mnpubkeys = array(), $mnips = array(), $withlastpaid = false) {
@@ -724,9 +724,9 @@ function dmn_masternodes_count($mysqli, $testnet, &$totalmncount, &$uniquemnips)
         $mninfo[$protocol]["ActiveMasternodesUniqueIPs"] = count($mninfo[$protocol]["ActiveMasternodesUniqueIPs"]);
     }
 
-    $uniquemnips = $mninfo[$maxprotocol]["ActiveMasternodesUniqueIPs"];
+//    $uniquemnips = $mninfo[$maxprotocol]["ActiveMasternodesUniqueIPs"];
 
-    $tmp = array("mninfo" => $mninfo, "uniquemnips" => $uniquemnips, "totalmncount" => $totalmncount);
+//    $tmp = array("mninfo" => $mninfo, "uniquemnips" => $uniquemnips, "totalmncount" => $totalmncount);
 //    file_put_contents($cachefnam,serialize($tmp),LOCK_EX);
 
     return $mninfo;

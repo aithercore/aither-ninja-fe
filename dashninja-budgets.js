@@ -700,7 +700,7 @@ $(document).ready(function(){
             },
             yAxis: {
                 title: {
-                    text: 'Amount (DASH)'
+                    text: 'Amount (AIT)'
                 },
                 plotLines: [{
                     value: 0,
@@ -709,7 +709,7 @@ $(document).ready(function(){
                 }]
             },
             tooltip: {
-                valueSuffix: 'DASH'
+                valueSuffix: 'AIT'
             },
             legend: {
                 layout: 'vertical',

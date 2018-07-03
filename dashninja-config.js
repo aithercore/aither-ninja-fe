@@ -30,7 +30,7 @@ var dashninjai2p = 'dzjzoefy7fx57h5xkdknikvfv3ckbxu2bx5wryn6taud343g2jma.b32.i2p
 var dashninjatestneti2p = 'hkttp5yfsmmmtsgynadotlk6t3ppsuaj274jzipj4fe7cko3whza.b32.i2p';
 
 // Coin logos
-var dashninjacoin = ['DASH','tDASH'];
+var dashninjacoin = ['AIT','tAIT'];
 
 // URLs
 // Block info
