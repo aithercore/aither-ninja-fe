@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <!--
-This file is part of Dash Ninja.
-https://github.com/elbereth/dashninja-fe
+This file is part of Aither Masternode.
+https://github.com/aithercore/aither-ninja-fe
 
-Dash Ninja is free software: you can redistribute it and/or modify
+Aither Masternode is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Dash Ninja is distributed in the hope that it will be useful,
+Aither Masternode is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
+along with Aither Masternode.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DASH Ninja - Governance Proposal Details</title>
+    <title>Aither Masternode - Governance Proposal Details</title>
 
     <link rel="icon" href="/static/dashninja-favicon.ico" />
     <link rel="icon" type="image/png" href="/static/dashninja-favicon.png" />
-    <link href="/static/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/dashninja-template-2.0.css" rel="stylesheet">
     <link href="/static/datatables/datatables.min.css" rel="stylesheet">
-    <link href="/static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,26 +49,22 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img style="margin-top: -13px; border-top: 0px; border-bottom: 0px; margin-right: 10px;" src="/static/dashninja-logo48x48.png" width="48" height="48" align="left"> DASH Ninja</a>
+            <a class="navbar-brand" href="/"><img style="margin-top: -13px; border-top: 0px; border-bottom: 0px; margin-right: 10px;" src="/static/dashninja-logo48x48.png" width="48" height="48" align="left"> Aither Masternode</a>
         </div>
         <div class="collapse navbar-collapse navbar-collapse" role="navigation">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/blocks.html"><i class="fa fa-link fa-fw" aria-hidden="true"></i> Blockchain</a></li>
+                <li><a href="/blocks.html"><i class="fa fa-link fa-fw" aria-hidden="true"></i> Blockhain</a></li>
                 <li><a href="/masternodes.html"><i class="fa fa-server fa-fw" aria-hidden="true"></i> Masternodes</a></li>
                 <li><a href="/governance.html"><i class="fa fa-balance-scale fa-fw" aria-hidden="true"></i> Governance</a></li>
-                <li><a name="menuitemexplorer" href="https://explorer.dashninja.pl"><i class="fa fa-search fa-fw" aria-hidden="true"></i> Explorer</a></li>
+                <li><a name="menuitemexplorer" href="https://explorer.aithercoin.com"><i class="fa fa-search fa-fw" aria-hidden="true"></i> Explorer</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i> Other Tools <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li class="dropdown-header">Official Pages</li>
-                        <li><a href="http://www.dash.org/">Dash Homepage</a></li>
-                        <li><a href="https://github.com/dashpay/dash">Dash Github Sources</a></li>
-                        <li><a href="https://www.dash.org/downloads/">Dash Binaries</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Forums / Wiki</li>
-                        <li><a href="https://dashpay.atlassian.net/wiki/">Official Dash Wiki</a></li>
-                        <li><a href="https://dash.org/forum">Official Dash Forum</a></li>
-                        <li><a href="https://bitcointalk.org/index.php?topic=421615">BitcoinTalk (BTC) - Dash ANN</a></li>
+                        <li><a href="http://www.aithercoin.com/">Aither Homepage</a></li>
+                        <li><a href="https://github.com/aithercore/aither">Aither Github Sources</a></li>
+                        <li><a href="https://github.com/aithercore/aither/releases">Aither Binaries</a></li>
+                        <li><a href="https://bitcointalk.org/index.php?topic=4521935">BitcoinTalk (BTC) - AitherCore ANN</a></li>
                     </ul>
                 </li>
             </ul>
@@ -139,10 +135,10 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
             <div class="col-lg-4 col-md-4">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        Dash Ninja info
+                        Aither Masternode info
                     </div>
                     <div class="panel-body">
-                        By <a class="badge badge-primary" href="https://keybase.io/elbereth/">elberethzone</a> / Time <span class="label label-info">GMT/UTC</span> / HTML <span class="label label-info">1.5.0</span> / JavaScript <span class="label label-danger" id="dashninjajsversion">required</span><br>
+                        By <a class="badge badge-primary" href="https://aithercoin.com">AitherCore</a> / Time <span class="label label-info">GMT/UTC</span> / HTML <span class="label label-info">1.5.0</span> / JavaScript <span class="label label-danger" id="dashninjajsversion">required</span><br>
                         <hr>
                         <span class="pull-left">Using BTC/DASH</span>
                         <span class="pull-right"><span id="fiatDASHBTCval" class="label label-primary">???</span> <span id="fiatDASHBTCwhen" class="label label-info">???</span> <span id="fiatDASHBTCwho" class="label label-default">???</span></span><br>
@@ -154,7 +150,7 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
                     </div>
                     <div class="panel-footer">
                         <span class="pull-left">Donations:</span>
-                        <span class="pull-right"><a href="http://chainz.cryptoid.info/dash/address.dws?XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz.htm">XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz</a></span>
+                        <span class="pull-right"><a href="https://explorer.aithercoin.com/address/AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7">AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7</a></span>
                         <div class="clearfix"></div>
                     </div>
                 </div>
@@ -292,7 +288,7 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
                     <p>From your masternode cold wallet (the one having your 1000 DASH vins and where the revenue arrives).</p>
                     <p>To vote from dash-qt (graphical wallet), go to Tools > Debug console and type:</p>
                     <pre>gobject vote-many <span id="budgethash1">???</span> funding yes</pre>
-                    <p>To vote from dash-cli (command line, dashd must be running), type:</p>
+                    <p>To vote from dash-cli (command line, aitherd must be running), type:</p>
                     <pre>dash-cli gobject vote-many <span id="budgethash2">???</span> funding yes</pre>
                 </div>
                 <div class="tab-pane fade" id="voteno">
@@ -300,7 +296,7 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
                     <p>From your masternode cold wallet (the one having your 1000 DASH vins and where the revenue arrives).</p>
                     <p>To vote from dash-qt (graphical wallet), go to Tools > Debug console and type:</p>
                     <pre>gobject vote-many <span id="budgethash3">???</span> funding no</pre>
-                    <p>To vote from dash-cli (command line, dashd must be running), type:</p>
+                    <p>To vote from dash-cli (command line, aitherd must be running), type:</p>
                     <pre>dash-cli gobject vote-many <span id="budgethash4">???</span> funding no</pre>
                 </div>
                 <div class="tab-pane fade" id="voteabstain">
@@ -308,7 +304,7 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
                     <p>From your masternode cold wallet (the one having your 1000 DASH vins and where the revenue arrives).</p>
                     <p>To vote from dash-qt (graphical wallet), go to Tools > Debug console and type:</p>
                     <pre>gobject vote-many <span id="budgethash5">???</span> funding abstain</pre>
-                    <p>To vote from dash-cli (command line, dashd must be running), type:</p>
+                    <p>To vote from dash-cli (command line, aitherd must be running), type:</p>
                     <pre>dash-cli gobject vote-many <span id="budgethash6">???</span> funding abstain</pre>
                 </div>
             </div>
@@ -386,7 +382,7 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
 </div>
 <div id="footer">
   <div class="container">
-      <p style="font-size:small;" align=right>Brought to you by <a href="https://www.dash.org/forum/members/elbereth.175/">elberethzone</a>. If this page is useful to you, spare some coin: <a href="http://chainz.cryptoid.info/dash/address.dws?XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz.htm">XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz</a><br>Contact me securely via <a href="https://keybase.io/elbereth">Keybase</a>. Check source (<a href="/LICENSE">GPLv3</a>) on: <a href="https://github.com/elbereth/dashninja-fe">GitHub</a>.</p>
+      <p style="font-size:small;" align=right>Brought to you by <a href="https://github.com/aithercore/">AitherCore</a>. If this page is useful to you, spare some coin: <a href="https://explorer.aithercoin.com/address/AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7">AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7</a><br>Issue at <a href="https://github.com/aithercore/aither-ninja-fe/issues">Github</a>. Check source (<a href="/LICENSE">GPLv3</a>) on: <a href="https://github.com/aithercore/aither-ninja-fe">GitHub</a>.</p>
   </div>
 </div>
     <script src="/static/jquery-2.2.4.min.js"></script>

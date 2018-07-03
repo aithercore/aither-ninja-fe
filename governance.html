@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <!--
-This file is part of Dash Ninja.
-https://github.com/elbereth/dashninja-fe
+This file is part of Aither Masternode.
+https://github.com/aithercore/aither-ninja-fe
 
-Dash Ninja is free software: you can redistribute it and/or modify
+Aither Masternode is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Dash Ninja is distributed in the hope that it will be useful,
+Aither Masternode is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
+along with Aither Masternode.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DASH Ninja - Governance Objects Monitoring</title>
+    <title>Aither Masternode - Governance Objects Monitoring</title>
 
     <link rel="icon" href="/static/dashninja-favicon.ico" />
     <link rel="icon" type="image/png" href="/static/dashninja-favicon.png" />
-    <link href="/static/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/dashninja-template-2.0.css" rel="stylesheet">
     <link href="/static/datatables/datatables.min.css" rel="stylesheet">
-    <link href="/static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,26 +49,22 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img style="margin-top: -13px; border-top: 0px; border-bottom: 0px; margin-right: 10px;" src="/static/dashninja-logo48x48.png" width="48" height="48" align="left"> DASH Ninja</a>
+            <a class="navbar-brand" href="/"><img style="margin-top: -13px; border-top: 0px; border-bottom: 0px; margin-right: 10px;" src="/static/dashninja-logo48x48.png" width="48" height="48" align="left"> Aither Masternode</a>
         </div>
         <div class="collapse navbar-collapse navbar-collapse" role="navigation">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/blocks.html"><i class="fa fa-link fa-fw" aria-hidden="true"></i> Blockchain</a></li>
+                <li><a href="/blocks.html"><i class="fa fa-link fa-fw" aria-hidden="true"></i> Blockhain</a></li>
                 <li><a href="/masternodes.html"><i class="fa fa-server fa-fw" aria-hidden="true"></i> Masternodes</a></li>
-                <li class="active"><a href="/governance.html"><i class="fa fa-balance-scale fa-fw" aria-hidden="true"></i> Governance</a></li>
-                <li><a name="menuitemexplorer" href="https://explorer.dashninja.pl"><i class="fa fa-search fa-fw" aria-hidden="true"></i> Explorer</a></li>
+                <li><a href="/governance.html"><i class="fa fa-balance-scale fa-fw" aria-hidden="true"></i> Governance</a></li>
+                <li><a name="menuitemexplorer" href="https://explorer.aithercoin.com"><i class="fa fa-search fa-fw" aria-hidden="true"></i> Explorer</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i> Other Tools <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li class="dropdown-header">Official Pages</li>
-                        <li><a href="http://www.dash.org/">Dash Homepage</a></li>
-                        <li><a href="https://github.com/dashpay/dash">Dash Github Sources</a></li>
-                        <li><a href="https://www.dash.org/downloads/">Dash Binaries</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Forums / Wiki</li>
-                        <li><a href="https://dashpay.atlassian.net/wiki/">Official Dash Wiki</a></li>
-                        <li><a href="https://dash.org/forum">Official Dash Forum</a></li>
-                        <li><a href="https://bitcointalk.org/index.php?topic=421615">BitcoinTalk (BTC) - Dash ANN</a></li>
+                        <li><a href="http://www.aithercoin.com/">Aither Homepage</a></li>
+                        <li><a href="https://github.com/aithercore/aither">Aither Github Sources</a></li>
+                        <li><a href="https://github.com/aithercore/aither/releases">Aither Binaries</a></li>
+                        <li><a href="https://bitcointalk.org/index.php?topic=4521935">BitcoinTalk (BTC) - AitherCore ANN</a></li>
                     </ul>
                 </li>
             </ul>
@@ -97,14 +93,14 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
             <div class="col-lg-4 col-md-4">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        Dash Ninja info
+                        Aither Masternode info
                     </div>
                     <div class="panel-body">
-                        By <a class="badge badge-primary" href="https://keybase.io/elbereth/">elberethzone</a> / Time <span class="label label-info">GMT/UTC</span> / HTML <span class="label label-info">1.6.0</span> / JavaScript <span class="label label-danger" id="dashninjajsversion">required</span>
+                        By <a class="badge badge-primary" href="https://aithercoin.com">AitherCore</a> / Time <span class="label label-info">GMT/UTC</span> / HTML <span class="label label-info">1.6.0</span> / JavaScript <span class="label label-danger" id="dashninjajsversion">required</span>
                     </div>
                     <div class="panel-footer">
                         <span class="pull-left">Donations:</span>
-                        <span class="pull-right"><a href="http://chainz.cryptoid.info/dash/address.dws?XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz.htm">XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz</a></span>
+                        <span class="pull-right"><a href="https://explorer.aithercoin.com/address/AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7">AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7</a></span>
                         <div class="clearfix"></div>
                     </div>
                 </div>
@@ -118,8 +114,8 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
                         <p class="lead"><span class="pull-left">Next super-block height:</span><span class="pull-right label label-info" id="globalnextsuperblockid">???</span></p><br>
                         <span class="pull-left">Expected on:</span><span class="pull-right label label-info" id="globalnextsuperblockdate">???</span><br>
                         <span class="pull-left">Time left:</span><span class="pull-right label label-primary" id="globalnextsuperblockremaining">???</span><br>
-                        <span class="pull-left">Providing:</span><span class="pull-right label label-info" id="globalnextsuperblockamount">???.?????? DASH</span><br>
-                        <p class="lead"><span class="pull-left">Unallocated:</span><span class="pull-right label label-success" id="globalnextsuperblockunallocated">???.?????? DASH</span></p>
+                        <span class="pull-left">Providing:</span><span class="pull-right label label-info" id="globalnextsuperblockamount">???.?????? AIT</span><br>
+                        <p class="lead"><span class="pull-left">Unallocated:</span><span class="pull-right label label-success" id="globalnextsuperblockunallocated">???.?????? AIT</span></p>
                     </div>
                     <div class="panel-footer">
                         <div class="progress">
@@ -281,14 +277,14 @@ along with Dash Ninja.  If not, see <http://www.gnu.org/licenses/>.
         <div id="footer">
             <hr>
             <div class="container">
-                <p style="font-size:small;" align=right>Brought to you by <a href="https://www.dash.org/forum/members/elbereth.175/">elberethzone</a>. If this page is useful to you, spare some coin: <a href="http://chainz.cryptoid.info/dash/address.dws?XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz.htm">XkfkHqMnhvQovo7kXQjvnNiFnQhRNZYCsz</a><br>Contact me securely via <a href="https://keybase.io/elbereth">Keybase</a>. Check source (<a href="/LICENSE">GPLv3</a>) on: <a href="https://github.com/elbereth/dashninja-fe">GitHub</a>.</p>
+                <p style="font-size:small;" align=right>Brought to you by <a href="https://github.com/aithercore/">AitherCore</a>. If this page is useful to you, spare some coin: <a href="https://explorer.aithercoin.com/address/AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7">AUYGFmYbuNokBKM28ssM5EyAhmopWz1or7</a><br>Issue at <a href="https://github.com/aithercore/aither-ninja-fe/issues">Github</a>. Check source (<a href="/LICENSE">GPLv3</a>) on: <a href="https://github.com/aithercore/aither-ninja-fe">GitHub</a>.</p>
             </div>
         </div>
     </div>
 </div>
 
-<script src="/static/jquery-3.2.1.min.js"></script>
-<script src="/static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="/static/jquery-2.2.4.min.js"></script>
+<script src="/static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
 <script src="/static/highcharts.js"></script>
 <script src="/static/highcharts-more.js"></script>
 <script src="/static/datatables/datatables.min.js"></script>
