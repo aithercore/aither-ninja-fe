@@ -22,20 +22,20 @@
 // Copy this file to config.inc.php and change configuration below
 
 // Path to the cache folder (files will be created in there, best if outside www access)
-DEFINE('CACHEFOLDER',"/home/dashninja/cache/");
+DEFINE('CACHEFOLDER',__DIR__."/../../cache/");
 
 // Path to the data folder (must be accessible by the website)
-DEFINE('DATAFOLDER',"/home/dashninja/www/data/");
+DEFINE('DATAFOLDER',__DIR__."/../../data/");
 
 // Semaphores
-DEFINE('DMN_CRON_MNFL_SEMAPHORE','/var/run/dash-www-cron-mnfl.pid');
-DEFINE('DMN_CRON_BK24_SEMAPHORE','/var/run/dash-www-cron-bk24.pid');
-DEFINE('DMN_CRON_MNST_SEMAPHORE','/var/run/dash-www-cron-mnst.pid');
-DEFINE('DMN_CRON_BKCS_SEMAPHORE','/var/run/dash-www-cron-bkcs.pid');
-DEFINE('DMN_CRON_GOVL_SEMAPHORE','/var/run/dash-www-cron-govl.pid');
-DEFINE('DMN_CRON_GOPR_SEMAPHORE','/var/run/dash-www-cron-gopr.pid');
-DEFINE('DMN_CRON_GOTR_SEMAPHORE','/var/run/dash-www-cron-gotr.pid');
-DEFINE('DMN_CRON_BKSB_SEMAPHORE','/var/run/dash-www-cron-bksb.pid');
+DEFINE('DMN_CRON_MNFL_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-mnfl.pid');
+DEFINE('DMN_CRON_BK24_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-bk24.pid');
+DEFINE('DMN_CRON_MNST_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-mnst.pid');
+DEFINE('DMN_CRON_BKCS_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-bkcs.pid');
+DEFINE('DMN_CRON_GOVL_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-govl.pid');
+DEFINE('DMN_CRON_GOPR_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-gopr.pid');
+DEFINE('DMN_CRON_GOTR_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-gotr.pid');
+DEFINE('DMN_CRON_BKSB_SEMAPHORE',__DIR__.'/../../run/dash-www-cron-bksb.pid');
 
 // Indicate here all MySQL configuration to connect to Dash Ninja Database
 DEFINE('MYSQLUSER',"dashninja-api");
